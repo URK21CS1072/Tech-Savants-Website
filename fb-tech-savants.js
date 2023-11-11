@@ -66,7 +66,7 @@ function createTable(data, docId) {
     const img = document.createElement("img");
     const imageUrl = data.image_url;
     const imageName = imageUrl.split("/").pop();
-    const firebaseStorageUrl = `https://firebasestorage.googleapis.com/v0/b/techsavants-bdf20.appspot.com/o/image%2Fgarbage_image%2F20231019-112404.jpg${encodeURIComponent(imageName)}?alt=media`;
+    const firebaseStorageUrl = `https://firebasestorage.googleapis.com/v0/b/techsavants-bdf20.appspot.com/o/image%2Fgarbage_image%2F${encodeURIComponent(imageName)}?alt=media`;
     img.src = firebaseStorageUrl;
     img.alt = imageName;
     img.className = "image-preview";
